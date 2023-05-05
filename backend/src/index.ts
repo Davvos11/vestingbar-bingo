@@ -4,7 +4,7 @@ import * as WebSocket from 'ws';
 
 const app = express();
 const server = http.createServer(app);
-const webSocketServer = new WebSocket.Server({server});
+const webSocketServer = new WebSocket.Server({server, path: "/ws"});
 
 webSocketServer.on('connection',
     (webSocket: WebSocket) => {
