@@ -1,0 +1,83 @@
+:root {
+    --red: #dd252d;
+    --yellow: #fdd831;
+}
+
+.app {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GeoSlab703 Md BT";
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+
+.loading {
+    background-color: var(--red);
+    padding: 30px;
+}
+
+.topLogo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: var(--red);
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topLogo img {
+    height: 100%;
+    filter: invert(100%);
+}
+
+.bingo {
+    background-color: var(--yellow);
+    padding: 40px 20px;
+    text-align: center;
+    z-index: -2;
+}
+
+.bingo h1 {
+    color: var(--red);
+    margin: 0;
+}
+
+.bingo hr {
+    background-color: white;
+    height: 5px;
+    border-width: 0;
+}
+
+.bingo .text {
+    /*background-color: white;*/
+    color: black;
+    padding: 40px;
+    font-size: 60px;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.bingo .text:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
