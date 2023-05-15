@@ -1,7 +1,4 @@
 export const entries = [
-    "Een bingokaart entry!",
-    "Bier is lekker",
-    "Ik lust er wel ééntje",
-    "Oeeeehhhhhhhhhhh",
-    "Een langere entry zodat ik kan testen of het een beetje chill op het scherm past"
+    "Song about childhood",
+    "Power ballad", "Cringy host joke", "Host outfit change", "Piano on stage", "Singer laying on the floor", "Wink at the camera", "Traditional outfit", "Traditional instrument", "Multilingual song", "\"Thank you Europe!\"", "Mullet haircut", "\"Douze points!\"", "\"Good evening Europe!\"", "Key change", "Heavy metal", "\"Thank you Liverpool!\"", "Singer changes outfit", "Air guitar", "Technical problems", "Host improvises terribly", "Host talks French", "Mia & Dion would've done better", "Song in native tongue", "Drag queen on stage", "Twelve points to a neighbour", "Rap break", "Contestant crying happy tears", "Political statements", "\"Boooo\"", "Song about love", "Feathers", "Something goes wrong", "Violin on stage", "Sing-along song", "#selfie", "Accordeon on stage", "Simple dance moves", "Indecent costumes", "Indecent dancing", "That's not Europe", "Flag face paint", "Glitter canon"
 ]
