@@ -15,6 +15,7 @@
     font-size: 50px;
     color: white;
     position: relative;
+    flex-direction: column;
 }
 
 .loading {
@@ -40,7 +41,7 @@
     filter: invert(100%);
 }
 
-.bingo {
+.bingo, .info {
     background-color: var(--yellow);
     padding: 40px 20px;
     text-align: center;
@@ -52,15 +53,22 @@
     overflow: hidden;
 }
 
-.bingo.hidden {
+.info {
+    background-color: var(--red);
+}
+
+.bingo.hidden, .info.hidden {
     transition: visibility 0s 2.5s, width 1s 1.5s, max-height 2s 0s;
 }
 
-.bingo.shown {
+.bingo.shown, .info.shown {
     max-height: calc(60%);
     width: 60%;
     visibility: visible;
+}
 
+.info.shown {
+    width: 100%;
 }
 
 .bingo h1 {
@@ -74,7 +82,7 @@
     border-width: 0;
 }
 
-.bingo .text {
+.bingo .text, .info .text {
     /*background-color: white;*/
     color: black;
     padding: 40px;
@@ -84,7 +92,7 @@
     margin-left: 5%;
 }
 
-.bingo .text:after {
+.bingo .text:after, .info .text:after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -97,4 +105,13 @@
     -moz-transform: skewX(-10deg);
     -ms-transform: skewX(-10deg);
     transform: skewX(-10deg);
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+}
+
+.info .text {
+
 }
